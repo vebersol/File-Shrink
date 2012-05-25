@@ -64,7 +64,7 @@ Class FileShrink {
 		$filename = $this->data['filename'] . '.' . $this->data['type'];
 	
 		if (file_exists($this->getPath() . $filename)) {
-			$filename = $this->data['filename'] . '-' . time() . '.' . $this->data['type'];
+			$filename = $this->data['filename'] . '-' . date('Ymd-His') . '.' . $this->data['type'];
 		}
 		
 		file_put_contents($this->getPath() . $filename, $this->response);
