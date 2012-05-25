@@ -1,6 +1,7 @@
 <?php
 
 Class FileShrink {
+	// Webservice documentation: http://code.google.com/p/reducisaurus/
 	private $webserviceUrl = 'http://reducisaurus.appspot.com/';
 
 	public function __construct() {
